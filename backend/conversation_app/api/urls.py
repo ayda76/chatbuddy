@@ -4,14 +4,17 @@ from django.contrib import admin
 from django.urls import path , include ,re_path
 
 router = DefaultRouter()
-# router.register("", ProfileViewSet)
+
+router.register("", ConversationViewSet)
+router.register("message", MessageViewSet)
 
 
 
 urlpatterns = [
 
     path("", include(router.urls)),
-#     path('change/password/', PasswordChangeView.as_view()),
+    path('messagesConversation', MessageConversation.as_view()),
+    path('favoriteMessages', MessageFav.as_view()),
 
     
 ]
