@@ -87,10 +87,11 @@ INSTALLED_APPS = [
     # 'ckeditor',
     # 'ckeditor_uploader',
     'tinymce',
-    'celery_app',
+    # 'celery_app',
     'django_prometheus',
 
-
+    'user_app',
+    'conversation_app'
     
 ]
 
